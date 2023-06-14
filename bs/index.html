@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    /* * {
+      transition: 1s;
+    } */
+
+    body {
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    #mv .carousel-item img {
+      object-fit: cover;
+    }
+
+    @media(min-width:576px) {
+      #myCarousel {
+        height: calc(40vh + 10vw);
+      }
+
+      #mv .carousel {
+        height: 100%;
+      }
+
+      #mv .carousel-inner {
+        height: 100%;
+      }
+
+      #mv .carousel-item {
+        height: 100%;
+      }
+
+      #mv .carousel-item img {
+        height: 100%;
+      }
+    }
+
+    @media(min-width:992px) {
+      #myCarousel {
+        width: 100%;
+      }
+
+      .big_card {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .lineEnd {
+        display: flex;
+        justify-content: end;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="opacity:0.7">
+      <!-- .container-fluid 滿版、.container 固定寬度 -->
+      <div class="container-fluid">
+        <!-- 品牌LOGO -->
+        <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+        <!-- 漢堡按鈕 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 選單 -->
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#meals">菜單餐點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#view">周邊景點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">莊園位置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#msg">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cafe">咖啡故事</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- 輪播圖 -->
+  <div id="mv" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="false">
+    <div class="carousel-indicators mt-5">
+      <!-- 指示器 .active 對應到 .carousel-item 的 .active -->
+      <button type="button" data-bs-target="#mv" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#mv" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#mv" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- .carousel-item 為一個輪播單位 -->
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1920/600/?random=1" class="d-block">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/600/?random=2" class="d-block">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/600/?random=3" class="d-block">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <!-- 上一張按鈕 -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#mv" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <!-- 下一張按鈕 -->
+    <button class="carousel-control-next" type="button" data-bs-target="#mv" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- 小卡片 -->
+  <div id="meals" class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 img-fluid m-auto" style="margin-top: 100px; width: 100%;">
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/300/200/?random=1" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">打了興趣高考演出保。</h5>
+            <p class="card-text">組成看著改造高手無論體育師傅，通常裡面感覺到什麼時候群發網易後悔作者名稱，上下。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/300/200/?random=2" class="card-img-top">
+
+          <div class="card-body">
+            <h5 class="card-title">打了興趣高考演出保。</h5>
+            <p class="card-text">組成看著改造高手無論體育師傅，通常裡面感覺到什麼時候群發網易後悔作者名稱，上下。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://picsum.photos/300/200/?random=3" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">打了興趣高考演出保。</h5>
+            <p class="card-text">組成看著改造高手無論體育師傅，通常裡面感覺到什麼時候群發網易後悔作者名稱，上下。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 大卡片 -->
+  <div id="view" class="big_card" style="margin-top: 100px;">
+    <div class="row flex-column flex-md-row">
+      <div class="col col-md-12 col-lg-6 p-0">
+        <img src="https://picsum.photos/800/400/?random=1" style="width: 100%;">
+      </div>
+
+      <div class="col col-md-12 col-lg-6 p-0 text-center">
+        <h2 style="margin: 15px;">Coffee Shop</h2>
+        <p style="margin: 15px;">
+          上述夫妻全文配合，父親國人結束答應默認引起兩年你就人數目光，困難不久常常痛苦舉行手機回家我也，及其總數有時很熱簡直記憶，嚴格手機我是承諾俱樂部訂單，受傷據說義務開發快速一位發出休閒，因此監督另外教學緊緊嚴重漂亮遭遇得到尚未不再沒什麼風景尤其，從此現象痛苦事實上臺灣人美麗限制寫真住了，不禁可以用終於位於熱情證明維護無比對著道路寫真臺灣民眾。
+        </p>
+        <button type="button" class="btn btn-success m-3">VIEW
+          COLLECTION</button>
+      </div>
+    </div>
+  </div>
+  <div class="big_card">
+    <div class="row flex-column flex-md-row-reverse text-center">
+      <div class="col col-md-12 col-lg-6 p-0">
+        <img src="https://picsum.photos/800/400/?random=2" style="width: 100%;">
+      </div>
+
+      <div class="col col-md-12 col-lg-6 p-0">
+        <h2 style="margin: 15px;">Coffee Shop</h2>
+        <p style="margin: 15px;">
+          上述夫妻全文配合，父親國人結束答應默認引起兩年你就人數目光，困難不久常常痛苦舉行手機回家我也，及其總數有時很熱簡直記憶，嚴格手機我是承諾俱樂部訂單，受傷據說義務開發快速一位發出休閒，因此監督另外教學緊緊嚴重漂亮遭遇得到尚未不再沒什麼風景尤其，從此現象痛苦事實上臺灣人美麗限制寫真住了，不禁可以用終於位於熱情證明維護無比對著道路寫真臺灣民眾。
+        </p>
+        <button type="button" class="btn btn-success m-3">VIEW
+          COLLECTION</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="msg" style="background: #DCDCDC;">
+    <!-- map -->
+    <iframe id="map" style="width: 100%;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28917.110442137557!2d121.42321415065193!3d25.046328967308586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a62aefeaaaab%3A0xcc149f542c143a74!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y!5e0!3m2!1szh-TW!2stw!4v1686037807585!5m2!1szh-TW!2stw"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- msg -->
+    <div class="text mt-5 text-center">
+      <h1>聯絡我們</h1>
+      <h5>泰山咖啡莊園，傳承熱情 coding 精神</h5>
+      <p style="font-size: 13px;">任何服務問題或建議，歡迎透過客服表單告知我們，謝謝!</p>
+    </div>
+    <form class="row g-3 p-5">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">姓名</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">電話</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">電子信箱</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputState" class="form-label">問題類型</label>
+        <select id="inputState" class="form-select">
+          <option selected>餐飲選擇</option>
+          <option>葷食</option>
+          <option>素食</option>
+        </select>
+      </div>
+
+
+      <div class="col-12">
+        <div class="msg">
+          <label for="inputAddress" class="form-label">意見需求</label>
+          <textarea type="text" class="form-control" id="inputAddress" style="width: 100%; height: 200px;" cols="60"
+            rows="10"></textarea>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">訂閱泰山職訓局最新資訊</label>
+        </div>
+      </div>
+      <div class="col-12" style="text-align: center;">
+        <button type="submit" class="btn btn-secondary">送出</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="row" style="background: #000; color: #fff;">
+
+      <div class="col col-md-6 col-lg-3 p-5">
+        <img class="rounded-circle m-1" src="https://picsum.photos/180/180/?random=10"
+          style="width: 180px; height: 180px;">
+      </div>
+      <div class="col col-md-6 col-lg-3 p-5">
+        <h5>Address</h5>
+        <p>123 Street Name<br>
+          City,AA 99999
+        </p>
+        <p></p>
+      </div>
+      <div class="col col-md-6 col-lg-3 p-5">
+        <h5>Links</h5>
+        <p>Website builder<br>
+          Download for Window<br>
+          Download for Mac
+        </p>
+      </div>
+      <div class="col col-md-6 col-lg-3 p-5">
+        <h5>Contacts</h5>
+        <p>Email:support@mobirise.com<br>
+          Phone:+1 (0) 0000 0000 001<br>
+          Fax:+1 (0) 000 0000 002
+        </p>
+      </div>
+      <div class="copyright" style="text-align: center;">
+        <p>Copyright 2021 Joanne Chen - All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
